@@ -186,8 +186,8 @@ else:                                                                       #pro
     
     
     STORAGES = {
-        'default': {'BACKEND': 'storages.backends.s3.S3Storage'},
-        'staticfiles': {'BACKEND': 'storages.backends.s3.S3Storage'}
+        'default': {'BACKEND': 'storages.backends.s3boto3.S3Boto3Storage'},
+        'staticfiles': {'BACKEND': 'storages.backends.s3boto3.S3StaticStorage'}
     }
 
 AUTHENTICATION_BACKENDS = [
