@@ -35,6 +35,7 @@ executing==1.2.0
 fastjsonschema==2.16.2
 filelock==3.9.0
 fonttools==4.38.0
+gunicorn==21.2.0
 idna==3.3
 ipykernel==6.17.0
 ipython==8.6.0
@@ -82,6 +83,7 @@ plotnine==0.10.1
 prometheus-client==0.15.0
 prompt-toolkit==3.0.32
 psutil==5.9.3
+psycopg2==2.9.7
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
