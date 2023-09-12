@@ -11,11 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 '''
 
 
-import sys
 from os import getenv, path
 from pathlib import Path
 
 import dj_database_url
+import sys
 import dotenv
 from django.core.management.utils import get_random_secret_key
 
@@ -187,7 +187,7 @@ else:                                                                       #pro
     
     STORAGES = {
         'default': {'BACKEND': 'storages.backends.s3.S3Storage'},
-        'staticfiles': {'BACKEND': 'storages.backends.s3.S3SaticStorage'}
+        'staticfiles': {'BACKEND': 'storages.backends.s3.S3Storage'}
     }
 
 AUTHENTICATION_BACKENDS = [
