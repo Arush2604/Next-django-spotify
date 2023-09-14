@@ -180,13 +180,14 @@ else:                                                                       #pro
     }
     AWS_DEFAULT_ACL = 'public-read'
     AWS_LOCATION = 'static'
+    AWS_MEDIA_LOCATION = 'media'
     #Custom domain for cdn, configured on DO spaces, allows data fetching from space buckets faster
     AWS_S3_CUSTOM_DOMAIN = getenv('AWS_S3_CUSTOM_DOMAIN')
 
     
     
     STORAGES = {
-        'default': {'BACKEND': 'storages.backends.s3boto3.S3Boto3Storage'},
+        'default': {'BACKEND': 'custom_storages.CustomS3Boto3Storage'},
         'staticfiles': {'BACKEND': 'storages.backends.s3boto3.S3StaticStorage'}
     }
 
